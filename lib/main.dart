@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
               fit: BoxFit.contain,
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
+              padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
@@ -189,23 +189,23 @@ class _MyHomePageState extends State<MyHomePage> {
                   const SizedBox(
                     height: 10,
                   ),
-                  const Card(text: 'Product Development', color: Colors.purple),
+                  const Card(text: 'Product Development', color: Colors.blue),
                   const SizedBox(
                     height: 10,
                   ),
-                  const Card(text: 'Product Development', color: Colors.purple),
+                  const Card(text: 'Product Development', color: Colors.orange),
                   const SizedBox(
                     height: 10,
                   ),
-                  const Card(text: 'Product Development', color: Colors.purple),
+                  const Card(text: 'Product Development', color: Colors.green),
                   const SizedBox(
                     height: 10,
                   ),
-                  const Card(text: 'Product Development', color: Colors.purple),
+                  const Card(text: 'Product Development', color: Colors.pink),
                   const SizedBox(
                     height: 10,
                   ),
-                  const Card(text: 'Product Development', color: Colors.purple),
+                  const Card(text: 'Product Development', color: Colors.brown),
                 ],
               ),
             )
@@ -230,6 +230,7 @@ class Card extends StatelessWidget {
       height: 25,
       decoration: BoxDecoration(
         color: color,
+        borderRadius: BorderRadius.circular(15.0),
       ),
       child: Text(text),
     );
